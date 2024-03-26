@@ -24,5 +24,5 @@ export default async function handler(req, res) {
       console.log(err);
     }
   }
-  res.status(200).json({ name: "John Doe" });
+  return res.status(200).json({ success: "This is not relevant for our code" });
 }

@@ -20,9 +20,10 @@ export default function Home() {
         <div className={styles.amplifyContainer}>
           <CryptoCheckout
             createPaymentIntentUrl="http://localhost:3000/api/amplify/intent"
-            theme="dark"
-            language="ES"
             environment="test"
+            language="ES"
+            theme="light"
+            onError={(e) => console.log(e)}
           />
         </div>
       </main>
